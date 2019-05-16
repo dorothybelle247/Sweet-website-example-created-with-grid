@@ -22,7 +22,11 @@ body{
     border: 0;
 }
 img{
-    max-width: 100%;
+    /* max-width: 100%; */
+    /* width: 50vw; */
+  height: 30vw;
+  object-fit: cover;
+  /* object-fit: contain; */
 }
 .wrapper{
     display: grid;
