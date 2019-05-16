@@ -10,7 +10,7 @@ html{
     color: var(--dark);
 }
 body{
-    background: #ffffff;
+    background: #C2B9B0;
     margin: 30px 50px;
     line-height: 1.4;
 }
@@ -60,7 +60,7 @@ img{
 .showcase{
     grid-area: showcase;
     min-height: 400px;
-    background: url(./img/alina-karpenko-1588536-unsplash.jpg);
+    background-image: url(./img/alina-karpenko-1588536-unsplash.jpg);
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
@@ -72,12 +72,12 @@ img{
     box-shadow: var(--shadow)
 
 }
-/* .top-box-a {
+.top-box-a {
     grid-area: top-box-a;
 }
 .top-box-b {
     grid-area: top-box-b;
-} */
+}
 .showcase h1{
     font-size: 4rem;
     margin-bottom:0;
@@ -107,6 +107,41 @@ img{
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 .box{
-    background: rgb(228, 228, 228);
+    background: var(--primary);
+    text-align: center;
+    padding: 1.5rem 2rem;
+    box-shadow: var(--shadow);
+}
+.info{
+    background: var(--primary);
+    box-shadow: var(--shadow);
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3rem;
+}
+.portfolio{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.portfolio img{
+    width: 100%;
+    box-shadow: var(--shadow);
+}
+footer{
+    margin-top: 2rem;
+    background: var(--dark);
+    color: var(--light);
+    text-align: center;
+    padding: 1rem;
+}
+@media(max-width: 700px){
+    .top-container{
+        grid-template-areas: 
+        'showcase showcase'
+        'top-box-a top-box-b';
+    }
+
 }
 
